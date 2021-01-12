@@ -11,4 +11,12 @@
     <string name="registrarme">Registrarme</string>
     <string name="username">Nombre De Usuario</string>
     <string name="Nombre">Nombre Completo</string>
+
+    <string name="title_activity_recipe">recipe</string>
+    <string name="kcal">KCal: </string>
+    <string name="tipo">Tipo: </string>
+    <string name="creado">Creado por </string>
+    <string name="pasos">Pasos: </string>
+    <string name="ingredientes">Ingredientes: </string>
+    <string name="verificado">Verificado: </string>
 </resources>
