@@ -2,8 +2,13 @@
     <string name="app_name">LogInAndroid</string>
     <string name="PocketChef">Pocket Chef</string>
     <string name="Email">E-mail</string>
-    <string name="password">PassWord</string>
+    <string name="password">Contraseña</string>
+    <string name="rpassword">Repetir contraseña</string>
     <string name="IniciarSesion">Iniciar Sesion</string>
     <string name="Registro">Resgistrate</string>
     <string name="remember">Recordarme?</string>
+    <string name="atras">Atras</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="username">Nombre De Usuario</string>
+    <string name="Nombre">Nombre Completo</string>
 </resources>

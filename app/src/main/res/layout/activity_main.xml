@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/recipe_book" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.367" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.45" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/contra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -98,7 +98,7 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/recordarme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
