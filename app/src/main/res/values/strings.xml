@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LogInAndroid</string>
+    <string name="PocketChef">Pocket Chef</string>
+    <string name="Email">E-mail</string>
+    <string name="password">PassWord</string>
+    <string name="IniciarSesion">Iniciar Sesion</string>
+    <string name="Registro">Resgistrate</string>
+    <string name="remember">Recordarme?</string>
+</resources>
