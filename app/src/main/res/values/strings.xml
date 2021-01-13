@@ -11,4 +11,6 @@
     <string name="registrarme">Registrarme</string>
     <string name="username">Nombre De Usuario</string>
     <string name="Nombre">Nombre Completo</string>
+    <string name="recetas">Recetas</string>
+    <string name="cerrarSesion">Cerrar sesión</string>
 </resources>
