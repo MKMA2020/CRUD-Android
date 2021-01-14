@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fbf6f0"
+    android:background="#aee6e6"
     tools:context=".recipe">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constLay_title"
         android:layout_width="409dp"
         android:layout_height="60dp"
-        android:background="#ffda77"
+        android:background="#fbf6f0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -38,17 +38,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="?attr/homeAsUpIndicator" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constLay_info"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#fbf6f0"
+        android:background="#aee6e6"
         android:paddingBottom="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constLay_title">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView8"
@@ -101,14 +101,13 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="35dp"
             android:text="Verificado"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txt_type"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_type" />
 
         <TextView
             android:id="@+id/textView3"
@@ -117,7 +116,7 @@
             android:layout_marginTop="15dp"
             android:text="@string/tipo"
             app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_calories" />
 
         <TextView
             android:id="@+id/textView2"
@@ -134,7 +133,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Calorias"
+            android:maxWidth="300dp"
+            android:text="@string/nodata"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -143,7 +143,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Tipo de comida"
+            android:maxWidth="301dp"
+            android:text="@string/nodata"
             app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="@+id/textView3" />
 
@@ -152,7 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="15dp"
-            android:text="Nombre de usuario"
+            android:text="@string/nodata"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView8" />
@@ -178,9 +179,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constLay_ingredientes"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="175dp"
-        android:background="#fbf6f0"
+        android:background="#aee6e6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -192,17 +193,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
             android:layout_marginTop="15dp"
-            android:text="Ingredientes"
+            android:text="@string/ingredientes"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txt_ingredientList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="15dp"
-            android:text="-Lista de ingredientes"
+            android:maxWidth="250dp"
+            android:text="@string/nodata"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView7"
@@ -225,9 +227,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constLay_pasos"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="#fbf6f0"
+        android:background="#aee6e6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -244,12 +246,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txt_steps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="15dp"
-            android:text="1. Pasos"
+            android:maxWidth="286dp"
+            android:text="@string/nodata"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView6"
