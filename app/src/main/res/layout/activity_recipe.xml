@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#fbf6f0"
+    android:layout_height="match_parent" >
+   <!-- android:background="#fbf6f0"
     tools:context=".recipe">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -179,5 +179,5 @@
             android:text="Pasos:"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="1dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
