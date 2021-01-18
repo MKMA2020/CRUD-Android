@@ -24,7 +24,7 @@ public class recipeMenu extends AppCompatActivity {
         }
     }
 
-    private ConstraintLayout fillItem(String recipeName, String userName, Boolean verified){
+    private void fillItem(String recipeName, String userName, Boolean verified){
 
 
     }
