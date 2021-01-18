@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class CustomListAdapter extends ArrayAdapter {
     private final Activity context;
-    private final String[] recipeName,
-            recipeCreator;
-    private final Boolean[] verified;
+    private final String[] recipeName/* = {"aaa", "bbb", "ccc"}*/,
+            recipeCreator/* = {"aaa", "bbb", "ccc"}*/;
+    private final Boolean[] verified/* = {true, false, true}*/;
 
     public CustomListAdapter(Activity context, String[] recipeNameParam,
                              String[] recipeCreatorParam, Boolean[] verifiedParam){
@@ -24,7 +24,7 @@ public class CustomListAdapter extends ArrayAdapter {
         this.verified = verifiedParam;
     }
 
-    public View getView(int position, View view, ViewGroup parent){
+    public View getView(int cont, View view, ViewGroup parent){
         LayoutInflater inflater = context.getLayoutInflater();
         View row = inflater.inflate(R.layout.recipe_list_layout, null, true);
 
@@ -38,7 +38,19 @@ public class CustomListAdapter extends ArrayAdapter {
                 img_rowNotLoaded = (ImageView)
                         row.findViewById(R.id.img_rowNotLoaded);
 
-        //TODO seguir: https://appsandbiscuits.com/listview-tutorial-android-12-ccef4ead27cc
+        img_rowNotVerified.setVisibility(View.INVISIBLE);
+        img_rowVerified.setVisibility(View.INVISIBLE);
 
+        txt_name.setText(recipeName[cont]);
+        txt_creator.setText(recipeCreator[cont]);
+        if (verified[cont]){
+            img_rowNotLoaded.setVisibility(View.INVISIBLE);
+            img_rowVerified.setVisibility(View.VISIBLE);
+        }else{
+            img_rowNotLoaded.setVisibility(View.INVISIBLE);
+            img_rowNotVerified.setVisibility(View.VISIBLE);
+        }
+
+        return row;
     }
 }

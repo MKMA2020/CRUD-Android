@@ -16,12 +16,15 @@ public class recipeMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_menu);
 
-        list_recipeList = findViewById(R.id.list_recipeList);
-
         //TODO Llenar o no userToSearch.
-        if(userToSearch != null){
-            //TODO filtrar por usuario recibido.
-        }
+
+        /*CustomListAdapter adapter = new CustomListAdapter(this, recipeName,
+                recipeCreator, verified);*/
+
+        list_recipeList = findViewById(R.id.list_recipeList);
+        //list_recipeList.setAdapter(adapter);
+
+        //TODO Add onItemClickListener
     }
 
     private void fillItem(String recipeName, String userName, Boolean verified){
